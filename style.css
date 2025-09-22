@@ -1,0 +1,79 @@
+body {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #fdf6e3;
+}
+
+header {
+  background-color: #ffcc00;
+  padding: 20px;
+  border-bottom: 5px solid #333;
+}
+
+main {
+  padding: 20px;
+}
+
+.fundo {
+  width: 80%;
+  max-width: 600px;
+  border: 5px dotted #000;
+  margin-bottom: 20px;
+  max-height: 48vh; /* ajusta a altura máxima da imagem */
+  width: auto;
+  height: auto;
+  border: 5px dotted #000;
+  margin-bottom: 20px;
+
+}
+
+/* Balão de fala estilizado com CSS */
+.balao {
+  position: relative;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 20px;
+  font-size: 1.2em;
+  color: #000;
+  margin: 20px auto;
+  width: 60%;
+  box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+}
+
+/* Pontinha do balão */
+.balao::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-top-color: black;
+}
+
+.botao {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff3366;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+  margin: 10px;
+}
+
+.botao:hover {
+  background-color: #cc0033;
+}
+
+footer {
+  margin-top: 20px;
+  font-size: 0.9em;
+  color: #555;
+}
+
